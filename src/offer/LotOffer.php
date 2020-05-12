@@ -1,6 +1,6 @@
 <?php
 
-namespace bmwx591\yrl\offer;
+namespace citysites\yrl\offer;
 
 class LotOffer extends BaseOffer
 {

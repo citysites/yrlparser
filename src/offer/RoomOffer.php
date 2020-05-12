@@ -1,10 +1,10 @@
 <?php
 
-namespace bmwx591\yrl\offer;
+namespace citysites\yrl\offer;
 
 /**
  * Class RoomOffer
- * @package bmwx591\yrl\offer
+ * @package citysites\yrl\offer
  */
 class RoomOffer extends BaseOffer
 {

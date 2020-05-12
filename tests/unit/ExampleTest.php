@@ -2,7 +2,7 @@
 
 /**
  * Class ExampleTest
- * @property \bmwx591\yrl\YRL $parser
+ * @property \citysites\yrl\YRL $parser
  */
 class ExampleTest extends \Codeception\TestCase\Test
 {
@@ -10,7 +10,7 @@ class ExampleTest extends \Codeception\TestCase\Test
 
     public function _before()
     {
-        $this->parser = new \bmwx591\yrl\YRL();
+        $this->parser = new \citysites\yrl\YRL();
         $name = 'realty.yrl';
         $this->parser->parse(__DIR__ . DIRECTORY_SEPARATOR . $name);
     }
@@ -39,25 +39,25 @@ class ExampleTest extends \Codeception\TestCase\Test
          */
         $offers = $this->parser->getOffers();
         $offer = $offers->current();
-        $this->assertInstanceOf(\bmwx591\yrl\offer\FlatOffer::class, $offer);
+        $this->assertInstanceOf(\citysites\yrl\offer\FlatOffer::class, $offer);
         $offers->next();
         $offer = $offers->current();
-        $this->assertInstanceOf(\bmwx591\yrl\offer\FlatOffer::class, $offer);
+        $this->assertInstanceOf(\citysites\yrl\offer\FlatOffer::class, $offer);
         $offers->next();
         $offer = $offers->current();
-        $this->assertInstanceOf(\bmwx591\yrl\offer\RoomOffer::class, $offer);
+        $this->assertInstanceOf(\citysites\yrl\offer\RoomOffer::class, $offer);
         $offers->next();
         $offer = $offers->current();
-        $this->assertInstanceOf(\bmwx591\yrl\offer\BaseOffer::class, $offer);
+        $this->assertInstanceOf(\citysites\yrl\offer\BaseOffer::class, $offer);
         $offers->next();
         $offer = $offers->current();
-        $this->assertInstanceOf(\bmwx591\yrl\offer\HouseOffer::class, $offer);
+        $this->assertInstanceOf(\citysites\yrl\offer\HouseOffer::class, $offer);
         $offers->next();
         $offer = $offers->current();
-        $this->assertInstanceOf(\bmwx591\yrl\offer\CommercialOffer::class, $offer);
+        $this->assertInstanceOf(\citysites\yrl\offer\CommercialOffer::class, $offer);
         $offers->next();
         $offer = $offers->current();
-        $this->assertInstanceOf(\bmwx591\yrl\offer\GarageOffer::class, $offer);
+        $this->assertInstanceOf(\citysites\yrl\offer\GarageOffer::class, $offer);
         $offers->next();
         $offer = $offers->current();
         $this->assertEquals(null, $offer);

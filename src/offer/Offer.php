@@ -1,16 +1,16 @@
 <?php
 
-namespace bmwx591\yrl\offer;
+namespace citysites\yrl\offer;
 
-use bmwx591\yrl\BaseObject;
-use bmwx591\yrl\Location;
-use bmwx591\yrl\Option;
-use bmwx591\yrl\Price;
-use bmwx591\yrl\SalesAgent;
+use citysites\yrl\BaseObject;
+use citysites\yrl\Location;
+use citysites\yrl\Option;
+use citysites\yrl\Price;
+use citysites\yrl\SalesAgent;
 
 /**
  * Class Offer
- * @package bmwx591\yrl\offer
+ * @package citysites\yrl\offer
  */
 abstract class Offer extends BaseObject
 {

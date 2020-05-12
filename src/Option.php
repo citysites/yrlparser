@@ -1,10 +1,10 @@
 <?php
 
-namespace bmwx591\yrl;
+namespace citysites\yrl;
 
 /**
  * Class Option
- * @package bmwx591\yrl
+ * @package citysites\yrl
  */
 class Option extends NestedObject
 {

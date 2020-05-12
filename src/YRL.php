@@ -1,18 +1,18 @@
 <?php
 
-namespace bmwx591\yrl;
+namespace citysites\yrl;
 
-use bmwx591\yrl\offer\BaseOffer;
-use bmwx591\yrl\offer\CommercialOffer;
-use bmwx591\yrl\offer\FlatOffer;
-use bmwx591\yrl\offer\GarageOffer;
-use bmwx591\yrl\offer\HouseOffer;
-use bmwx591\yrl\offer\LotOffer;
-use bmwx591\yrl\offer\RoomOffer;
+use citysites\yrl\offer\BaseOffer;
+use citysites\yrl\offer\CommercialOffer;
+use citysites\yrl\offer\FlatOffer;
+use citysites\yrl\offer\GarageOffer;
+use citysites\yrl\offer\HouseOffer;
+use citysites\yrl\offer\LotOffer;
+use citysites\yrl\offer\RoomOffer;
 
 /**
  * Class YRL
- * @package bmwx591\yrl
+ * @package citysites\yrl
  */
 class YRL {
 

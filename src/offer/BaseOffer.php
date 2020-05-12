@@ -1,12 +1,12 @@
 <?php
 
-namespace bmwx591\yrl\offer;
+namespace citysites\yrl\offer;
 
-use bmwx591\yrl\Option;
+use citysites\yrl\Option;
 
 /**
  * Class BaseOffer
- * @package bmwx591\yrl\offer
+ * @package citysites\yrl\offer
  */
 class BaseOffer extends Offer
 {

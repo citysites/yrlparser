@@ -1,10 +1,10 @@
 <?php
 
-namespace bmwx591\yrl;
+namespace citysites\yrl;
 
 /**
  * Class SalesAgent
- * @package bmwx591\yrl
+ * @package citysites\yrl
  */
 class SalesAgent extends NestedObject
 {

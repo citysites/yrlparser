@@ -1,10 +1,10 @@
 <?php
 
-namespace bmwx591\yrl;
+namespace citysites\yrl;
 
 /**
  * Class Location
- * @package bmwx591\yrl
+ * @package citysites\yrl
  */
 class Location extends NestedObject
 {
