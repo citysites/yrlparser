@@ -3,6 +3,7 @@
 namespace citysites\yrl\offer;
 
 use citysites\yrl\Option;
+use citysites\yrl\VideoReview;
 
 /**
  * Class BaseOffer
@@ -56,6 +57,8 @@ class BaseOffer extends Offer
     protected $buildingState;
 
     protected $rubbishChute;
+
+    protected $videoReview;
 
     /**
      * @return string
@@ -463,6 +466,21 @@ class BaseOffer extends Offer
         return $this;
     }
 
+    public function getVideoReview()
+    {
+        return $this->videoReview;
+    }
+
+    /**
+     * @param string $videoReview
+     * @return $this
+     */
+    public function setVideoReview($videoReview)
+    {
+        $this->videoReview = $videoReview;
+        return $this;
+    }
+
     /**
      * @return bool
      */
@@ -476,6 +494,12 @@ class BaseOffer extends Offer
         $name = $attrNode['name'];
         if ('room-space' == $name) {
             return $this->addRoomSpace((new Option())->setOptions($attrNode));
+        }
+        if ('video-review' == $name) {
+            if (empty($attrNode['nodes'])) {
+                return $this;
+            }
+            return $this->setVideoReview((new VideoReview())->setOptions($attrNode));
         }
         return parent::setAttribute($attrNode);
     }
