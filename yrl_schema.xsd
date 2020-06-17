@@ -256,6 +256,14 @@
                     <xs:element name="renovation" type="xs:string" />
                     <xs:element name="quality" type="xs:string" />
                     <xs:element name="description" type="xs:string" />
+                    <xs:element name="video-review">
+                        <xs:complexType>
+                            <xs:choice minOccurs="0" maxOccurs="2">
+                                <xs:element name="youtube-video-review-url" type="xs:string" />
+                                <xs:element name="online-show" type="xs:string" />
+                            </xs:choice>
+                        </xs:complexType>
+                    </xs:element>
                     <xs:element name="lot-type" type="xs:string" />
                     <xs:element name="new-flat">
                         <xs:simpleType>
