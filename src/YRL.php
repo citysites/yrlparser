@@ -241,6 +241,28 @@ class YRL {
                 return new FlatOffer();
             case 'коммерческая' :
             case 'commercial' :
+            case 'office' :
+            case 'офисное помещение' :
+            case 'готовый бизнес' :
+            case 'business' :
+            case 'помещения свободного назначения' :
+            case 'free purpose' :
+            case 'автосервис' :
+            case 'auto repair' :
+            case 'гостиница' :
+            case 'hotel' :
+            case 'land' :
+            case 'земли коммерческого назначения' :
+            case 'юридический адрес' :
+            case 'legal address' :
+            case 'manufacturing' :
+            case 'производственное помещение' :
+            case 'public catering' :
+            case 'общепит' :
+            case 'retail' :
+            case 'торговые помещения' :
+            case 'warehouse' :
+            case 'склад' :
                 return new CommercialOffer();
             case 'комната' :
             case 'room' :
