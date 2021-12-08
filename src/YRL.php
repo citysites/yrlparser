@@ -280,7 +280,7 @@ class YRL {
             case 'townhouse' :
                 return new BaseOffer();
             default :
-                throw new \InvalidArgumentException('Undefined offer type - "'. $type. '"!');
+                throw new \InvalidArgumentException('(category) Неизвестная категория объекта - "'. $type. '"!');
                 break;
         }
     }
