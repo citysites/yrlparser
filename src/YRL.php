@@ -88,10 +88,10 @@ class YRL {
     public function parse($uri, $schema = null)
     {
         $this->uri = $uri;
-        if (empty($schema)) {
-            $this->schema = __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'yrl_schema.xsd';
-        } elseif (is_string($schema)) {
+        if (is_string($schema)) {
             $this->schema = $schema;
+        } elseif (false !== $schema) {
+            $this->schema = __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'yrl_schema.xsd';
         }
         $this->open();
         while ($this->read()) {
