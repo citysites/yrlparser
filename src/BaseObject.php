@@ -112,17 +112,13 @@ abstract class BaseObject
                 $array[$key] = $value->getData();
             } elseif (is_array($value) && !empty($value)) {
                 $array[$key] = self::toArray($value);
-            } else {
-                $getter = 'get' . $key;
-                if (method_exists($object, $getter)) {
-                    $getValue = $object->$getter();
-                    if ((is_array($getValue) && !empty($getValue)) || (!is_array($getValue) && !is_null($getValue))) {
-                        $array[$key] = $getValue;
-                    }
+            } elseif (is_object($value) && method_exists($object, $getter = 'get' . $key)) {
+                $getValue = $object->$getter();
+                if ((is_array($getValue) && !empty($getValue)) || (!is_array($getValue) && !is_null($getValue))) {
+                    $array[$key] = $getValue;
                 }
-                elseif ($value !== null) {
+            } elseif ($value !== null) {
                     $array[$key] = $value;
-                }
             }
         }
         return $array;
